@@ -1,5 +1,25 @@
-# html_css
-Learning html_css
+# Learning-html
+Learning how to create websites with html.
 
-# Testing out Git pull
-Delete this once you pull
+## Basic command
+see if your branch is in sync with origin changes.
+```
+git status
+```
+Copy code from online repository to your local computer
+```
+git pull 
+```
+Send all your local changes to github
+```
+git push 
+```
+any message you'd like, this is your commit messages
+```
+git commit -m ""  
+```
+create you local branch name
+```
+git checkout -b ; 
+```
+

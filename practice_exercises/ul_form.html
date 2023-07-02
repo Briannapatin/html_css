@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Tourism Company</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/dolphin.ico" type="image/x-icon">
+    <style>
+        body {
+            background-image: url("./images/bridge.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        h1,
+        a:hover {
+            background-color: white;
+            color: #0000ff;
+            border: 2px solid blue;
+        }
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>
+            <nav>
+                <ul style=" display: flex; flex-direction: row; justify-content: center;font-weight: bold;">
+                    <li title="We are a tourism company that specializes in providing unique and memorable travel experiences for our
+            clients. Our team of expert travel planners and guides will help you plan your dream vacation and make
+            sure that every detail is taken care of"><a href="#about-us">About Us &nbsp;|</a></li>
+                    <li
+                        title="Customized travel planning.Group travel packages.Adventure and outdoor activities.Cultural and historical tours.Luxury travel experiences.">
+                        <a href="#services">Services&nbsp;|</a>
+                    </li>
+                    <li title="Our tourism company offers travel packages to a wide variety of destinations around the world. Some of
+            our most popular destinations include"><a href="#destinations">Destinations&nbsp;|</a></li>
+                    <li title="Send us an email."><a href="#contact-us">Contact Us&nbsp;|</a></li>
+                </ul>
+            </nav>
+        </p>
+
+
+        <h1>Our Tourism Company</h1>
+    </header>
+    <main>
+            <h2>About Us</h2>
+            <p>We are a tourism company that specializes in providing unique and memorable travel experiences for our
+                clients. Our team of expert travel planners and guides will help you plan your dream vacation and make
+                sure that every detail is taken care of.</p>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Customized travel planning</li>
+                <li>Group travel packages</li>
+                <li>Adventure and outdoor activities</li>
+                <li>Cultural and historical tours</li>
+                <li>Luxury travel experiences</li>
+            </ul>
+        </section>
+        <section id="destinations">
+            <h2>Destinations</h2>
+            <p>Our tourism company offers travel packages to a wide variety of destinations around the world. Some of
+                our most popular destinations include:</p>
+            <ul>
+                <li>Paris, France</li>
+                <li>Tokyo, Japan</li>
+                <li>Sydney, Australia</li>
+                <li>Rio de Janeiro, Brazil</li>
+                <li>Cape Town, South Africa</li>
+            </ul>
+        </section>
+        <section id="contact-us">
+            <div style="color: #00ff00;">
+                <h2>Contact Us</h2>
+                <form action="submit-form.php" method="post" autocomplete>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p style="color: aliceblue;">&copy; 2021 Our Tourism Company. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
