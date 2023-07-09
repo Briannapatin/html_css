@@ -22,4 +22,7 @@ create you local branch name
 ```
 git checkout -b ; 
 ```
-
+clone from github to local pc
+```
+git clone
+```
