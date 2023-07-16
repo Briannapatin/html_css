@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <style>
+.container {
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 35%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.name {
+    flex: 1 0 140px;
+    margin: 5px;
+}
+.email {
+    flex: 1 0 140px;
+    margin: 5px;
+}
+.submit {
+    background-color: #00f;
+    color: #fff;
+    flex: 1 0 50px;
+    border: 1px solid blue;
+}
+input[type] {
+    border-radius: 5%;
+}
+    </style>
+</head>
+<body>
+    <form action="" class="container">
+        <input type="text" placeholder="Name" class="name">
+        <input type="email" placeholder="Email" class="email">
+        <input type="Submit" class="submit">
+    </form>
+</body>
+</html>
