@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Table</title>
+    <style>
+        .dark1 {
+            background-color: #fff;
+            color: #000;
+            transition: background-color 0.5s; /* Added transition for smooth animation */
+        }
+        
+
+        span {
+            float: inline-end;
+            cursor: pointer; /* Added cursor style for pointer */
+        }
+
+        .toggle-btn {
+            font-size: 30px;
+            transition: transform 0.5s; /* Added transition for button animation */
+        }
+
+        .dark-mode .toggle-btn {
+            transform: rotate(180deg);
+     /* Rotate the button when in dark mode */
+        }
+
+        .dark-mode {
+            background-color: #000;
+            color: #fff;
+     /* Change body background color to black in dark mode */
+        }
+    </style>
+</head>
+
+<body class="dark1">
+    <!-- <div class="dark1"> -->
+        <span class="toggle-btn" id="toggleBtn">
+            &#9728; <!-- Unicode for sun character -->
+        </span>
+        <script>
+            const toggleBtn = document.getElementById('toggleBtn');
+            const body = document.body;
+    
+            toggleBtn.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+            });
+        </script>
+        <p>Hello World</p>
+        <p>
+            Your mission, should you choose to accept it, is to use a comment to prevent the paragraph below from being
+            shown in the preview window.
+        </p>
+        <p>
+            Your mission, should you choose to accept it, is to use a comment to prevent the paragraph below from being
+            shown in the preview window.
+        </p>
+        <p>
+            Your mission, should you choose to accept it, is to use a comment to prevent the paragraph below from being
+            shown in the preview window.
+        </p>
+        <p>
+            Your mission, should you choose to accept it, is to use a comment to prevent the paragraph below from being
+            shown in the preview window.
+        </p>
+        <p>
+            Your mission, should you choose to accept it, is to use a comment to prevent the paragraph below from being
+            shown in the preview window.
+        </p>
+        <p>
+            Your mission, should you choose to accept it, is to use a comment to prevent the paragraph below from being
+            shown in the preview window.
+        </p>
+        <p>
+            Your mission, should you choose to accept it, is to use a comment to prevent the paragraph below from being
+            shown in the preview window.
+        </p>
+        <p>
+            Your mission, should you choose to accept it, is to use a comment to prevent the paragraph below from being
+            shown in the preview window.
+        </p>
+    <!-- </div> -->
+</body>
+
+</html>
