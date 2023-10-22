@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
     <title>DCTC!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #container {
+            position: relative;
+            height: 100vh;
+
+        }
+
+        .centre {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .shadow {
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+        }
+
+        div.sticky {
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 0;
+            border: 12px solid #4CAF50;
+            border-radius: 12px;
+            text-align: center;
+            background-color: #000;
+            color: aliceblue;
+        }
+
+        #container:hover {
+            border: 2px solid #000;
+        }
+    </style>
 </head>
+
 <body>
-    <img src="./images/dctc_mechanics.jpg" alt="dctc">
-    <a href="https://www.dctc.edu/">DCTC</a>
-    
+    <div class="sticky">
+        <h3>HOW TO CENTER AN IMAGE</h3>
+    </div>
+    <p>The image below is centered
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+            <style>
+                svg {
+                    fill: #461f51
+                }
+            </style>
+            <path
+                d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+        </svg>
+    </p>
+    <div id="container">
+        <div id="centre1">
+            <div class="centre">
+                <img src="./images/dctc_mechanics.jpg" alt="dctc" height="250px" width="400">
+                <a href="https://www.dctc.edu/">DCTC</a>
+            </div>
+        </div>
+
+        <div class="shadow">
+            <button onclick="shadow()">Shadow</button>
+        </div>
+    </div>
+    <script>
+        function shadow() {
+            let x = document.querySelector("#centre1 img");
+            let currentBoxShadow = window.getComputedStyle(x).boxShadow;
+
+            if (currentBoxShadow === "none" || currentBoxShadow === "0px 0px 0px 0px rgba(0, 0, 0, 0)") {
+                x.style.boxShadow = "0px 10px 25px #f00";
+            } else {
+                x.style.boxShadow = "none";
+            }
+        }
+    </script>
 </body>
+
 </html>
